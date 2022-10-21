@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	<category>
+	    <pattern>*</pattern>
+	    <template>
+	        Welcome! In order to recommend the most suitable job type for you,
+	        select the option that best describes you.
+	        
+	        <reply>
+	            <text>
+	                I love to code
+	            </text>
+	            <postback>
+	                lovecode
+	            </postback>
+	        </reply>
+	        
+	        <reply>
+	            <text>
+	                I rather lead projects
+	            </text>
+	            <postback>
+	                leader
+	            </postback>
+	        </reply>
+	        
+	        <reply>
+	            <text>
+	                I am fascinated by computer security
+	            </text>
+	            <postback>
+	                comsec
+	            </postback>
+	        </reply>
+	        
+	        <reply>
+	            <text>
+	                I like front end development
+	            </text>
+	            <postback>
+	                webdev
+	            </postback>
+	        </reply>
+	        
+	        <reply>
+	            <text>
+	                I like designing systems
+	            </text>
+	            <postback>
+	                sysarch
+	            </postback>
+	        </reply>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>lovecode</pattern>
+        <template>I recommend you to consider Software Developer jobs</template>
+    </category>
+    
+    <category>
+        <pattern>leader</pattern>
+        <template>I recommend you to consider IT Project Manager jobs</template>
+    </category>
+    
+    <category>
+        <pattern>comsec</pattern>
+        <template>I recommend you to consider Information Security Analyst jobs</template>
+    </category>
+    
+    <category>
+        <pattern>webdev</pattern>
+        <template>I recommend you to consider Web Developer jobs</template>
+    </category>
+    
+    <category>
+        <pattern>sysarch</pattern>
+        <template>I recommend you to consider Systems Architect jobs</template>
+    </category>
+	
+</aiml>
